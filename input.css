@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.bg-instant {
+  background-image: url('./images/instant-settlement-bg.svg');
+}
+.bg-instant:hover {
+  background-image: url('./images/instant-settlement-bghover.svg');
+}
+.bg-feature{
+     background-image: url('./images/core-features-sectionBg.svg');
+
+}
+.bg-cta{
+  background-image: url('./images/CTABg.svg');
+}
