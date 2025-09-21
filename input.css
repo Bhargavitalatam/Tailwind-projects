@@ -1,27 +1,15 @@
-/* Tailwind base imports */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Custom Background Classes */
-
-/* Instant Settlement Section */
 .bg-instant {
-  @apply bg-no-repeat bg-center bg-cover; /* Tailwind utility classes */
-  background-image: url('../images/instant-settlement-bg.svg');
+  background-image: url('./images/instant-settlement-bg.svg');
 }
 .bg-instant:hover {
-  background-image: url('../images/instant-settlement-bghover.svg');
+  background-image: url('./images/instant-settlement-bghover.svg');
 }
+.bg-feature{
+     background-image: url('./images/core-features-sectionBg.svg');
 
-/* Core Features Section */
-.bg-feature {
-  @apply bg-no-repeat bg-center bg-cover;
-  background-image: url('../images/core-features-sectionBg.svg');
 }
-
-/* Call To Action Section */
-.bg-cta {
-  @apply bg-no-repeat bg-center bg-cover;
-  background-image: url('../images/CTABg.svg');
+.bg-cta{
+  background-image: url('./images/CTABg.svg');
 }
