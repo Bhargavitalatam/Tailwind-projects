@@ -3,116 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+    <title>Webpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <title>RazorPay</title>
-    <style>
-       .corefeatures{
-         background-size: 100% 100%;
-         padding-top: 12rem;
-         padding-bottom: 12rem;
-       }
-       .companiesList{
-         animation: 10s infinite linear moveCompany;
-       }
-       @keyframes moveCompany{
-         0% { top: 0; }
-         100% { top: -50%; }
-       }
-       .ctaSection{
-         background-size: 100% 100%;
-       }
-    </style>
 </head>
-<body>
-   <div class="relative overflow-x-hidden w-full">
+<body class="bg-white text-gray-800">
 
-       <!-- nav bar -->
-       <nav class="bg-[#02042a]">
-        <div class="relative w-[1080px] mx-auto flex items-center justify-between">
-            <!-- logo -->
-            <a href="/" class="cursor-pointer py-7 pr-7">
-                <img src="./images/logo.svg" width="125px" height="30px"/>
-            </a>
-            <ul class="flex space-x-6">
-               <li class="text-white py-7 hover:text-[#2b84ea] transition-all duration-200 cursor-pointer group relative hidden lg:block">
-                  <a href="#"> Payments </a>
-                  <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
-               </li>
-               <li class="text-white py-7 hover:text-[#2b84ea] hidden lg:block transition-all duration-200 cursor-pointer group relative">
-                  <a href="#"> Banking </a>
-                  <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
-               </li>
-               <li class="text-white py-7 hover:text-[#2b84ea] hidden lg:block transition-all duration-200 cursor-pointer group relative">
-                  <a href="#"> Corporate Card </a>
-               </li>
-               <li class="text-white py-7 hover:text-[#2b84ea] hidden lg:block transition-all duration-200 cursor-pointer group relative">
-                  <a href="#"> Payroll </a>
-               </li>
-               <li class="text-white py-7 hover:text-[#2b84ea] hidden lg:block transition-all duration-200 cursor-pointer group relative">
-                  <a href="#"> Resources </a>
-                  <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
-               </li>
-               <li class="text-white py-7 hover:text-[#2b84ea] hidden lg:block transition-all duration-200 cursor-pointer group relative">
-                  <a href="#"> Support </a>
-                  <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
-               </li>
-               <li class="text-white py-7 hover:text-[#2b84ea] hidden lg:block transition-all duration-200 cursor-pointer group relative">
-                  <a href="#"> Pricing </a>
-                  <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
-               </li>
-            </ul>
-            <div class="space-x-6 flex">
-              <img src="./images/india-flag.svg" width="28px" height="20px" class="hidden lg:block">
-              <button class="text-white border border-[#2b84ea] hidden lg:block rounded-sm px-5 py-3 text-sm cursor-pointer font-bold">Log in</button>
-              <button class="px-5 py-3 rounded-sm text-sm bg-white text-[#4b94ed] border hidden lg:block font-bold transition-all duration-200 hover:text-[#0b72e7] cursor-pointer">Sign Up</button>
-            </div>
-        </div>
-    </nav> 
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4 flex justify-between items-center">
+        <div class="text-xl font-bold">Logo</div>
+        <ul class="flex space-x-6">
+            <li><a href="#features" class="hover:text-gray-400">Features</a></li>
+            <li><a href="#companies" class="hover:text-gray-400">Companies</a></li>
+            <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- hero section  -->
-    <section class="relative bg-[#02042a]">
-      <div class="w-10/12 max-w-[1080px] mx-auto flex justify-between items-center flex-col lg:flex-row">
-        <!-- left -->
-        <div class="space-y-6">
-          <h1 class="font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow your business</h1>
-          <div class="w-6 h-1 bg-[#61cea6]"></div>
-          <p class="text-[18px] text-white leading-7 opacity-70">
-            Accept payments from customers. Automate payouts to vendors & employees. Never run out of working Capital.
-          </p>
-          <button class="bg-[#2b84ea] text-white rounded-md font-bold px-[18px] py-[14px] hover:bg-[#0b72e7] transition-all duration-200">Sign Up Now!</button>
-        </div>
-        <!-- right -->
-        <img src="./images/hero-illustration.jpg" alt="" class="max-w-[680px]">
-      </div>
-      <!-- shape part -->
-      <div class="absolute left-0 right-2 w-[103%]">
-        <img src="./images/hero-shape.svg" alt="" class="w-full object-fill scale-x-100">
-      </div>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 py-20 text-center">
+        <h1 class="text-4xl font-bold mb-4">Welcome to Our Webpage</h1>
+        <p class="text-lg mb-6">We provide amazing solutions to help your business grow.</p>
+        <a href="#features" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Explore Features</a>
     </section>
 
-    <!-- feature section 1 -->
-    <section class="relative mt-[190px] overflow-hidden">
-      <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167" class="absolute -top-[8rem] left-[10rem] inline-block -z-10">
-      <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167" class="absolute top-[3rem] right-0 inline-block rotate-180">
-      <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
-        <h2 class="text-black text-2xl text-center font-extrabold hidden md:block leading-1.2">Accept Payments with Razorpay Payment Suite</h2>
-        <h2 class="text-black text-5xl text-center font-extrabold md:hidden leading-1.2">Explore RazorPay Payment Suite</h2>
-        <div class="w-6 h-1 bg-[#61cea6] mx-auto mt-4 mb-6"></div>
-        <!-- content -->
-        <div class="w-full bg-white flex rounded-md p-10 py-12 min-h-[520px] border relative overflow-hidden">
-          <!-- left section -->
-          <div class="flex flex-col justify-between w-full ">
-            <h3 class="text-28px leading-10 font-bold max-w-[500px]">Supercharge your business with the all‑powerful <span class="text-[#2b84ea]">Payment Gateway</span></h3>
-            <ul class="space-y-2">
-              <li class="flex items-center space-x-2"> <i data-feather="check" class="text-[#61cea6]"></i> <span>100+ Payment Methods</span></li>
-              <li class="flex items-center space-x-2"> <i data-feather="check" class="text-[#61cea6]"></i> <span>Industry Leading Success Rate</span></li>
-              <li class="flex items-center space-x-2"> <i data-feather="check" class="text-[#61cea6]"></i> <span>Superior Checkout Experience</span></li>
-              <li class="flex items-center space-x-2"> <i data-feather="check" class="text-[#61cea6]"></i> <span>Easy to Integrate</span></li>
-              <li class="flex items-center space-x-2"> <i data-feather="check" class="text-[#61cea6]"></i> <span>Instant Settlements from day 1</span></li>
-              <li class="flex items-center space-x-2"> <i data-feather="check" class="text-[#61cea6]"></i> <span>In-depth Reporting and Insights</span></li>
-            </ul>
-            <div class="flex flex-col-reverse lg:flex-row items-center space-x-4">
-              <button class="bg-[#2b84ea] text-white py-[14px] hover:bg-[#0b72e7] px-[18px] rounded-md font-bold self-stretch lg:w-fit">Sign Up Now</button>
-              <div class="flex self-start md:self-center cursor-pointer group">
-                <a href="#" class="text-[#0b72e7] font-bold group-hover:text-[#344a6c] transition
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <div class="mb-4">
+                        <i data-feather="cpu" class="w-12 h-12 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fast Performance</h3>
+                    <p>Optimized for speed and efficiency, ensuring smooth user experience.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <div class="mb-4">
+                        <i data-feather="shield" class="w-12 h-12 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Secure</h3>
+                    <p>We prioritize your security with state-of-the-art protection.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <div class="mb-4">
+                        <i data-feather="smartphone" class="w-12 h-12 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mobile Friendly</h3>
+                    <p>Fully responsive design works perfectly on all devices.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section id="companies" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12">Our Clients</h2>
+            <div class="flex flex-wrap justify-center gap-10 items-center">
+                <img src="https://via.placeholder.com/150x50?text=Company+1" alt="Company 1">
+                <img src="https://via.placeholder.com/150x50?text=Company+2" alt="Company 2">
+                <img src="https://via.placeholder.com/150x50?text=Company+3" alt="Company 3">
+                <img src="https://via.placeholder.com/150x50?text=Company+4" alt="Company 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section id="contact" class="py-20 bg-blue-600 text-white text-center">
+        <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+        <p class="mb-6">Ready to take your business to the next level? Contact us today!</p>
+        <a href="mailto:info@example.com" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+
+    <!-- Feather Icons Init -->
+    <script>
+        feather.replace()
+    </script>
+
+</body>
+</html>
